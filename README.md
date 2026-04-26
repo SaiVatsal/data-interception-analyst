@@ -1,0 +1,3 @@
+Step 1: The code goes through all characters present in the document that was parsed. It specifically looks for the Unicode values of Zero Width Space (\u200b) and Zero Width Non-Joiner (\u200c). They are mapped to 0 and 1, respectively.
+Step 2: By using Python's range() function with a step of 8, the script slices the long binary string into manageable byte-sized chunks. int(chunk, 2) handles the base-2 math automatically, and chr() maps that integer to the corresponding ASCII character.
+Step 2: By using Python's range() function with a step of 8, the script slices the long binary string into manageable byte-sized chunks. int(chunk, 2) handles the base-2 math automatically, and chr() maps that integer to the corresponding ASCII character.
